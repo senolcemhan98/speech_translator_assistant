@@ -9,3 +9,5 @@ Konuşmayı Google Translate ile Türkçe çevirisini getirmek.
 
 Asistanın size yönlendirdiği "how can i help you?" sorusuna "Translate" diye cevap verilmeli.
 Daha sonra çevirmek istediğiniz cümleyi söyleyin. Asistan size Google Translate ile çevirilmiş linki iletecektir.
+
+"Thank you" denilince asistan sizinle vedalaşır ve kapanır.
