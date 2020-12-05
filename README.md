@@ -1,4 +1,4 @@
-# speech_translator_assistant
+![image](https://user-images.githubusercontent.com/58151691/101240106-2b3dde00-36fe-11eb-90f5-ed623e01390c.png)
 
 
 # Projenin Amacı
