@@ -56,7 +56,7 @@ def record(ask = False):
             voice = r.recognize_google(audio)
             
         except sr.UnknownValueError:
-            speak("Sorry! I did't understand.")       
+            speak("Sorry! I did't understand. Could you repeat that please.")       
             
         except sr.RequestError:
             speak("System is not working.")
@@ -69,6 +69,18 @@ def response(voice):
         url_sentence = fix_link(sentence)
         url = "https://translate.google.com/?sl=en&tl=tr&text="+url_sentence+"&op=translate"
         webbrowser.get().open(url)
+        
+    if 'dictionary' in voice:
+        sentence = record('which word do you want to know')
+        url_sentence = fix_link(sentence)
+        url = "https://tureng.com/tr/turkce-ingilizce/"+url_sentence
+        webbrowser.get().open(url) 
+        
+    if 'search' in voice:
+        sentence = record('What do you want to search in Google?')
+        url_sentence = fix_link(sentence)
+        url = "https://www.google.com/search?q="+url_sentence
+        webbrowser.get().open(url) 
         
     if 'thank you' in voice:
         speak("Good Bye")
